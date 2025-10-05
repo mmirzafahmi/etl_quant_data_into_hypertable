@@ -1,0 +1,16 @@
+[package]
+name = "etl_databento_ohlcv_1m"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+databento = "0.34.1"
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+time = { version = "0.3", features = ["macros"] }
+parquet = "53.3.0"
+arrow = "53.3.0"
+aws-config = "1.5.11"
+aws-sdk-s3 = "1.60.0"
+dotenvy = "0.15"
+sqlx = { version = "0.8", features = ["runtime-tokio", "postgres", "time"] }
